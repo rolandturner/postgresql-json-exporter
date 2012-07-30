@@ -1,0 +1,16 @@
+This is a quick-and-dirty converter built to export the contents of a PostgreSQL
+database to a JSON file for later import to MongoDB.
+
+Some details:
+- I was combining two Trac databases into one, so I needed to
+-- record which database each row came from and (_connectionURL)
+-- only drop a target collection once (dropped)
+- PostgreSQL appears to put all application tables in the "public"
+  schema with type "TABLE"; these values are both hard-coded.
+- NOTE IN PARTICULAR that this does not export "SEQUENCE" objects,
+  which may mean that information important to your application is lost.
+- This should work with any JDBC source, give or take those two
+  hard-coded values.
+- The ultimate target was MongoDB, so:
+-- the output rows are templated as MongoDB commands
+-- any table named "version" is skipped

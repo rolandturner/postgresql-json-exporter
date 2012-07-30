@@ -1,0 +1,25 @@
+JDBC to JSON exporter
+Copyright (C) 2012 Roland Turner http://rolandturner.com/
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+Note that this program depends upon json-simple
+https://code.google.com/p/json-simple/ which is distributed under the
+Apache License, Version 2.0. If the interpretation of the Gnu GPL in your
+jurisdiction means that you're not able to distribute this program or a
+derivative of it because of the different license on json-simple then
+additional permission is hereby granted to distribute this program and
+derivatives of it anyway with all other aspects of the Gnu GPL in full
+effect, and likewise to your licensees under the Gnu GPL, and theirs, etc.
